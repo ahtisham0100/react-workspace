@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import StopWatch from './assets/StopWatch';
 import { useRef } from 'react'
+import ButtonClicks from './assets/ButtonClicks';
+import Form from './assets/Form';
 function App() {
   const [count, setCount] = useState(0)
   const ref= useRef("none");
@@ -16,6 +18,8 @@ console.log(ref.current.value)
       setCount(prev=>prev+1)
      }}>{count}</button>
      <StopWatch/>
+     <ButtonClicks/> 
+     <Form/>
     </>
   )
 }
