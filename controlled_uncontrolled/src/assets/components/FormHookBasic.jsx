@@ -8,7 +8,7 @@ isDirty , isReady , isLoading , isSubmitSuccessful
     }} = useForm()
 
 let onSubmit =  (data)=>{
-        console.log("data is " ,data.name , data.email , data.phone)
+        console.log(data.name , data.email , data.phone)
 
 }
 
