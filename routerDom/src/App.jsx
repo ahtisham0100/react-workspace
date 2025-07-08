@@ -5,6 +5,7 @@ import Home from './assets/Home'
 import About from './assets/About'
 import Contact from './assets/Contact'
 import Header from './assets/Header'
+import Login from './assets/Login'
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-      <Route path='/contact' element={<Contact/> } />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )

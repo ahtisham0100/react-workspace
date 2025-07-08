@@ -14,6 +14,9 @@ function Header() {
                     </li>
                     <li>
                         <NavLink className={({isActive})=> isActive ? "active": ""} to="/contact">Contact</NavLink>
+                    </li> 
+                    <li> 
+                        <NavLink className={({isActive})=> isActive ? "active": ""} to="/Login">Login</NavLink>
                     </li>
                 </ul>
             </nav>
