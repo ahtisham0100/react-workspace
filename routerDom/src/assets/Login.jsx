@@ -5,9 +5,12 @@ function Login() {
     const navigate = useNavigate()
     
     function handleLogin(e) {
-        e.preventDefault()
+        e.preventDefault(); // Prevent form submission
+        // Here you would typically handle authentication logic
+        // For this example, we'll just navigate to the home page
+const username = "john_doe";
+navigate(`/user/${username}`, { replace: true }); // Redirect to user profile
 
-        navigate("/about", { replace: true });
     }
     return (
         <div className="login-container">

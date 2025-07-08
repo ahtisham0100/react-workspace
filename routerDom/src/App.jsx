@@ -6,6 +6,7 @@ import About from './assets/About'
 import Contact from './assets/Contact'
 import Header from './assets/Header'
 import Login from './assets/Login'
+import User from './assets/User'
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path='/contact' element={<Contact />} />
+    <Route path='user/:username' element={<User/>} />
+    <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   )
