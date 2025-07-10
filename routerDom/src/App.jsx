@@ -8,11 +8,13 @@ import Header from './assets/Header'
 import Login from './assets/Login'
 import User from './assets/User'
 import Topics from './assets/Topics'
+import ErrorBoundary from './assets/ErrorBoundary'
 function App() {
 
   return (
-    <BrowserRouter>
-      <Header />
+<ErrorBoundary>  
+<BrowserRouter>
+   <Header />
       <Routes>
         <Route path="/login" element={<Login />} />
 
@@ -42,6 +44,8 @@ function App() {
       </Routes>
 
     </BrowserRouter>
+</ErrorBoundary>
+  
   )
 }
 
